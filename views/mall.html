@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ./includes/head.html %>
+<body data-event="mall">
+    <div class="index">
+        <div class="fl f-container">
+            <div class="fl-search-content fl">
+                <label class="control-label">
+                    <select class="form-control" name="used">
+                        <option value="">全部</option>
+                        <option value="1">未使用</option>
+                        <option value="0">已使用</option>
+                    </select>
+                </label>
+                <input class="form-control" type="text" name="name" placeholder="请输入序列号或角色名称">
+                <input class="form-control" type="text" name="item" placeholder="请输入数量或ID">
+                <span class="btn btn-primary search-btn"><i class="fa fa-search"></i>搜索</span>
+                <span class="btn btn-primary add-btn"><i class="fa fa-plus"></i>新增</span>
+                <span class="btn btn-primary batch-deletion"><i class="fa fa-trash-o"></i>批量删除</span>
+            </div>
+            <div class="fl-user-panel fl">
+                <div class="fl-user-title">序列号列表</div>
+                <div class="fl-user-content">
+                    <table class="table-list ">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <i class="fa fa-square-o checkAll"></i>
+                                </th>
+                                <th>序列号</th>
+                                <th>领取角色</th>
+                                <th>类型</th>
+                                <th>数量</th>
+                                <th>使用情况</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="data-content"> </tbody>
+                    </table>
+                </div>
+                <div id="Pagination" class="pagination fr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="add-code-panel hide p15"></div>
+</body>
+<% include ./includes/foot.html %>
+<script src="js/mall.js"></script>
+</html>

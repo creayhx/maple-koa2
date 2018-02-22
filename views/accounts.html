@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ./includes/head.html %>
+<body>
+    <div class="index">
+        <div class="fl f-container">
+            <div class="fl-search-content fl">
+                <label class="control-label">
+                    <span>帐号状态:</span>
+                    <select class="form-control" name="loggedin">
+                        <option value="">全部</option>
+                        <option value="1">在线</option>
+                        <option value="0">下线</option>
+                    </select>
+                </label>
+                <label class="control-label">
+                    <span>帐号状态:</span>
+                    <select class="form-control" name="banned">
+                        <option value="">全部</option>
+                        <option value="0">正常</option>
+                        <option value="1">封号</option>
+                    </select>
+                </label>
+                <input class="form-control" type="text" name="name" placeholder="请输入帐号名称">
+                <span class="btn btn-primary search-btn"><i class="fa fa-search"></i>搜索</span>
+                <span class="btn btn-primary add-btn"><i class="fa fa-address-card-o"></i>新增</span>
+                <span class="btn btn-primary batch-deletion"><i class="fa fa-trash-o"></i>批量删除</span>
+            </div>
+            <div class="fl-user-panel fl">
+                <div class="fl-user-title">帐号列表</div>
+                <div class="fl-user-content">
+                    <table class="table-list">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <i class="fa fa-square-o checkAll"></i>
+                                </th>
+                                <th>帐号</th>
+                                <th>是否在线</th>
+                                <th>状态</th>
+                                <th>封号理由</th>
+                                <th>点券</th>
+                                <th>抵用券</th>
+                                <th>元宝</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="data-content"></tbody>
+                    </table>
+                </div>
+                <div id="Pagination" class="pagination fr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="user-panel hide">
+        <label class="control-label line">
+            <span>帐号:</span>
+            <input class="form-control" type="text" name="name">
+        </label>
+        <label class="control-label line">
+            <span>密码:</span>
+            <input class="form-control" type="password" name="password">
+        </label>
+        <span class="btn btn-primary add-user-btn">保存</span>
+        <span class="btn btn-primary" onclick="layer.closeAll();">取消</span>
+    </div>
+    <div class="user-detail-panel hide">
+        <label class="control-label line">
+            <span>帐号:</span>
+            <input class="form-control" type="text" name="name" readonly>
+        </label>
+        <label class="control-label line">
+            <span>生日:</span>
+            <input class="form-control" type="text" name="birthday">
+        </label>
+        <label class="control-label line">
+            <span>GM等级:</span>
+            <input class="form-control" type="text" name="gm">
+        </label>
+        <label class="control-label line">
+            <span>QQ:</span>
+            <input class="form-control" type="text" name="QQ">
+        </label>
+        <label class="control-label line">
+            <span>邮箱:</span>
+            <input class="form-control" type="text" name="email">
+        </label>
+        <label class="control-label line">
+            <span>点卷:</span>
+            <input class="form-control" type="text" name="paypalNX">
+        </label>
+        <label class="control-label line">
+            <span>抵用卷:</span>
+            <input class="form-control" type="text" name="mPoints">
+        </label>
+        <label class="control-label line">
+            <span>元宝:</span>
+            <input class="form-control" type="text" name="money">
+        </label>
+        <span class="btn btn-primary user-detail-btn">保存</span>
+        <span class="btn btn-primary" onclick="layer.closeAll();">取消</span>
+    </div>
+</body>
+<%include ./includes/foot.html%>
+<script src="js/account.js"></script>
+</html>

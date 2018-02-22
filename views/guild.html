@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ./includes/head.html %>
+<body data-event="guild">
+    <div class="index">
+        <div class="fl f-container">
+            <div class="fl-search-content fl">
+                <input class="form-control" type="text" name="name" placeholder="请输入家族或家族长名称">
+                <span class="btn btn-primary search-btn"><i class="fa fa-search"></i>搜索</span>
+                <span class="btn btn-primary batch-deletion"><i class="fa fa-trash-o"></i>批量删除</span>
+            </div>
+            <div class="fl-user-panel fl">
+                <div class="fl-user-title">家族列表</div>
+                <div class="fl-user-content">
+                    <table class="table-list">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <i class="fa fa-square-o checkAll"></i>
+                                </th>
+                                <th>创建者</th>
+                                <th>家族名称</th>
+                                <th>人数上限</th>
+                                <th>积分</th>
+                                <th>家族公告</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="data-content"> </tbody>
+                    </table>
+                </div>
+                <div id="Pagination" class="pagination fr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="guild-modify-panel hide p15">
+    	<input type="hidden" name="guildid">
+    </div>
+</body>
+<% include ./includes/foot.html %>
+<script src="js/guild.js"></script>
+</html>

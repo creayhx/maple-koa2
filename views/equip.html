@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ./includes/head.html %>
+<body data-event="equip">
+    <div class="index">
+        <div class="fl f-container">
+            <div class="fl-search-content fl">
+                <input class="form-control" type="text" name="name" placeholder="请输入角色名称">
+                <span class="btn btn-primary search-btn"><i class="fa fa-search"></i>搜索</span>
+                <span class="btn btn-primary batch-deletion"><i class="fa fa-trash-o"></i>批量删除</span>
+            </div>
+            <div class="fl-user-panel fl">
+                <div class="fl-user-title">装备列表</div>
+                <div class="fl-user-content">
+                    <table class="table-list">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <i class="fa fa-square-o checkAll"></i>
+                                </th>
+                                <th>角色名称</th>
+                                <th>图片</th>
+                                <th>装备名称</th>
+                                <th>物品ID</th>
+                                <th>物品类型</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="data-content"></tbody>
+                    </table>
+                </div>
+                <div id="Pagination" class="pagination fr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="equip-modify-panel p15 hide"></div>
+</body>
+<% include ./includes/foot.html %>
+<script src="js/equip.js"></script>
+</html>

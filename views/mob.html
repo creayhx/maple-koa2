@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ./includes/head.html %>
+<body data-event="mob">
+    <div class="index">
+        <div class="fl f-container">
+            <div class="fl-user-panel fl">
+            	<div class="fl-tree-panel fl">
+            		<div class="tree-sch">
+            			<input class="form-control" type="text" name="name" placeholder="请输入怪物名称">
+            			<div class="line">
+                            <span class="btn btn-primary tree-search">搜索</span>
+	            			<span class="btn btn-primary tree-add">添加</span>
+	            			<span class="btn btn-primary tree-remove">删除</span>
+            			</div>
+            		</div>
+               		<div class="tree-content"></div>
+            	</div>
+            	<div class="fl-content-panel fl">
+            		<div class="fl-search-content fl">
+            		    <span class="btn btn-primary batch-deletion"><i class="fa fa-trash-o"></i>批量删除</span>
+            		</div>
+        		    <table class="table-list table-ml">
+        		        <thead>
+        		            <tr>
+        		                <th>
+        		                    <i class="fa fa-square-o checkAll"></i>
+        		                </th>
+        		                <th>物品图片</th>
+        		                <th>物品名称</th>
+        		                <th>物品ID</th>
+        		                <th>物品爆率</th>
+        		                <th>操作</th>
+        		            </tr>
+        		        </thead>
+        		        <tbody class="data-content"></tbody>
+        		    </table>
+            		<div id="Pagination" class="pagination fr"></div>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <div class="shop-modify-panel hide p15">
+    	<input type="hidden" name="id">
+    </div>
+</body>
+<% include ./includes/foot.html %>
+<script src="js/mob.js"></script>
+</html>

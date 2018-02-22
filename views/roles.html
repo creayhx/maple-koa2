@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ./includes/head.html %>
+<body>
+    <div class="index">
+        <div class="fl f-container">
+            <div class="fl-search-content fl">
+                <input class="form-control" type="text" name="name" placeholder="请输入帐号或角色名称">
+                <span class="btn btn-primary search-btn"><i class="fa fa-search"></i>搜索</span>
+                <span class="btn btn-primary modify-btn"><i class="fa fa-search"></i>修改</span>
+                <span class="btn btn-primary batch-deletion"><i class="fa fa-trash-o"></i>批量删除</span>
+            </div>
+            <div class="fl-user-panel fl">
+                <div class="fl-user-title">角色列表</div>
+                <div class="fl-user-content fl-user-content-x">
+                    <table class="table-list ">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <i class="fa fa-square-o checkAll"></i>
+                                </th>
+                                <th>名称</th>
+                                <th>GM等级</th>
+                                <th>VIP等级</th>
+                                <th>等级</th>
+                                <th>经验</th>
+                                <th>力量</th>
+                                <th>敏捷</th>
+                                <th>智力</th>
+                                <th>运气</th>
+                                <th>最大血量</th>
+                                <th>最大蓝量</th>
+                                <th>冒险币</th>
+                                <th>职业</th>
+                                <th>属性点</th>
+                                <th>技能点</th>
+                                <th>地图</th>
+                                <th>装备格</th>
+                                <th>消耗格</th>
+                                <th>设置格</th>
+                                <th>其他格</th>
+                                <th>现金格</th>
+                                <th>人气</th>
+                            </tr>
+                        </thead>
+                        <tbody class="data-content"> </tbody>
+                    </table>
+                </div>
+                <div id="Pagination" class="pagination fr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="role-modify-panel p15 hide"></div>
+</body>
+<% include ./includes/foot.html %>
+<script src="js/job.js"></script>
+<script src="js/role.js"></script>
+</html>

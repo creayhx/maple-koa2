@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ./includes/head.html %>
+<body>
+    <div class="index">
+        <div class="fl f-nav">
+            <div class="user-content">
+                <img class="user-headImg" >
+                <p class="user-name"><% if(user){ %><%=user.name%><% } %></p>
+                <% if(user){ %><p class="user-logout">退出登录</p><%}%>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li data-src="/accounts">帐号管理</li>
+                    <li data-src="/role" >角色管理</li>
+                    <li data-src="/equip" >装备管理</li>
+                    <li data-src="/inventory" >背包管理</li>
+                    <li data-src="/mall" >商城Code</li>
+                    <li data-src="/guild" >家族管理</li>
+                    <li data-src="/shop" >商店管理</li>
+                    <li data-src="/mob" >怪物管理</li>
+                    <li data-src="/skill" >技能管理</li>
+                    <li data-src="/library" >资料库</li>
+                    <li data-src="/setting" >系统设置</li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl f-top-title">
+            <div class="f-top-title-text">
+                <span></span>
+            </div>
+        </div>
+        <div class="f-frame-group">
+        </div>
+    </div>
+</body>
+<%include ./includes/foot.html %>
+<script src="js/index.js"></script>
+</html>

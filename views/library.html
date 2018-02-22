@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<% include ./includes/head.html %>
+<link rel="stylesheet" type="text/css" href="/css/library.css">
+<body class="oh">
+    <div class="productList-info">
+        <div class="productList-info-top">
+            <p class="info-name">鸡蛋</p>
+            <p class="info-description">特殊物品</p>
+            <div class="hoverbox-content">
+                <div class="hoverbox-img">
+                    <img src="" alt="" />
+                </div>
+                <div class="hoverbox-content-info">
+                    增加防御.<br>这是增加防御的一个物品
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="index">
+        <div class="fl f-container">
+            <div class="library-content">
+                <p class="library-tabs">
+                    <span class="active">职业介绍</span>
+                    <span>怪物资料</span>
+                    <span>装备介绍</span>
+                    <span>npc介绍</span>
+                </p>
+                <div class="tabs-content">
+                    <div class="job-ul">
+                        <div class="tabs-card">
+                            <p class="card-head"><span class="card-name">潇洒几</span><span class="card-time">2017-12-12</span></p>
+                            <ul class="card-content"></ul>
+                            <p class="card-foot">安卓</p>
+                        </div>
+                    </div>
+                    <!-- 怪物图鉴 -->
+                    <div class="monster-ul">
+                        <div class="monster-box">
+                            <div class="monster-left">
+                                <p class="monster-search"><input type="text" /><span></span></p>
+                                <ul class="monster-left-ul">
+
+                                </ul>
+                                <div class="page-btn">
+                                        <span class="page-left-btn"></span>
+                                        <p class="page-num">
+                                            <span class="curPage"></span>
+                                            /
+                                            <span class="pageSize"></span>
+                                        </p>
+                                        <span class="page-right-btn"></span>
+                                </div>
+                            </div>
+                            <div class="monster-right">
+                                <div class="monster-right-box">
+                                    <div  class="basic" style="display: none;">
+
+                                    </div>
+                                    <div  class="basic-info" style="display: none;">
+
+                                    </div>
+                                    <div  class="trophy">
+                                        <p class="monster-name">吉米拉</p>
+                                        <ul class="monster-right-ul">
+                                            <li>
+                                                <div class="monster-right-img">
+                                                    <img src="" alt="" />
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                                <div class="monster-btn">
+                                    <span class="basic">基本情报</span>
+                                    <span class="basic-info">怪物情报</span>
+                                    <span class="trophy active">战利品</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="equipment-ul">
+
+                    </div>
+                    <!-- npc列表 -->
+                    <div class="npc-ul">
+                        <div class="npc-box">
+
+                        </div>
+                        <div class="productList">
+                            <div class="productList-box">
+                                <div class="productList-header">
+                                    <div class="npc-header-img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <span>退出商店</span>
+                                    <span>购买物品</span>
+                                </div>
+                                <div class="productList-content">
+                                    <p class="productList-p">
+                                        <span class="active" data-category="xiaohao">消耗</span>
+                                        <span data-category="shezhi">设置</span>
+                                        <span data-category="qita">其他</span>
+                                        <span data-category="teshu">特殊</span>
+                                    </p>
+                                    <ul class="productList-content-ul"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<% include ./includes/foot.html %>
+<script src="js/library.js"></script>
+</html>

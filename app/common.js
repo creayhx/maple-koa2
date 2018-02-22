@@ -13,7 +13,7 @@ exports.readFile = (path,type) => {
 		});
 	});
 };
-exports.query = (sql,value)=>{
+exports.sql = (sql,value)=>{
 	return new Promise( (resolve,reject) => {
 		pool.getConnection( (err,conn) =>{
 			if(err){
@@ -25,6 +25,7 @@ exports.query = (sql,value)=>{
 					}else{
 						resolve(rows);
 					};
+					conn.release(); 
 				});
 			};
 		} );

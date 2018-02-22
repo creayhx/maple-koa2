@@ -103,7 +103,7 @@
 	        url:url,
 	        dataType:'json',
 	        success:function(resp){
-	            if(resp.ret){
+	            if(resp.result){
                 	cb&&cb(resp)
 	            }else{
 	                layer.msg(resp.msg)

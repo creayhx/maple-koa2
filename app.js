@@ -14,6 +14,6 @@ app.use( views( path.join(__dirname, './views'),{
 app.use( session(require('./app/session'),app) );
 require('./app/router')(app);
 
-app.listen(3000,function(){
-	console.log('server on 3000')
+app.listen(81,function(){
+	console.log('server on 81')
 });

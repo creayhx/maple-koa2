@@ -84,6 +84,4 @@ module.exports = (app)=>{
 
 	router.get('/library/mobs/:curPage',Ver.canUseAjax, Library.mobs)
 	
-
-	app.use(router.routes()).use(router.allowedMethods());
 };

@@ -6,12 +6,12 @@ const session = require('koa-session');
 const path = require('path');
 const app = new Koa();
 
-app.use( static( path.join(__dirname , './static') ) );
 app.use( bodyParser() );
+app.use( static( path.join(__dirname , './static') ) );
 app.use( views( path.join(__dirname, './views'),{
 	map :{html : 'ejs'}
 } ) );
-app.use( session(require('./app/session'),app) );
+app.use( session(require('./app/session'), app) );
 require('./app/router')(app);
 
 app.listen(81,function(){

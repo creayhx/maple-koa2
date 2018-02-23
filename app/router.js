@@ -83,5 +83,5 @@ module.exports = (app)=>{
 	router.post('/skill/skills/:curPage',Ver.canUseAjax, Skill.skills);
 
 	router.get('/library/mobs/:curPage',Ver.canUseAjax, Library.mobs)
-	
+	app.use(router.routes()).use(router.allowedMethods());
 };

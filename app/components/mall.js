@@ -1,7 +1,4 @@
-const sql = require('../common').sql;
-const result = require('../common').result;
-const splitPageSize = require('../common').splitPageSize;
-const getSalt = require('../common').getSalt;
+const {sql, result, splitPageSize, getSalt} = require('../common');
 
 module.exports = {
     search: async (ctx)=>{

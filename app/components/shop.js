@@ -1,6 +1,4 @@
-const sql = require('../common').sql;
-const result = require('../common').result;
-const splitPageSize = require('../common').splitPageSize;
+const {sql, result, splitPageSize} = require('../common');
 
 module.exports = {
     npcList :  async (ctx)=>{

@@ -1,8 +1,5 @@
-const result = require('../common').result;
-const splitPageSize = require('../common').splitPageSize;
-const getSalt = require('../common').getSalt;
-const getTime = require('../common').getTime;
-const sql = require('../common').sql;
+const {sql, result, splitPageSize,getSalt,getTime} = require('../common');
+
 const crypto = require('crypto');
 
 module.exports = {
